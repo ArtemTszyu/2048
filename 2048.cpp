@@ -120,10 +120,10 @@ int main() {
 	if (readpole(zone)) {
 		for (; cin >> znak;) {
 			switch (znak) {
-			case 'x': { vniz(zone); printpole(zone); break; }
-			case 'k': { vverh(zone); printpole(zone); break; }
-			case 'l': { vpravo(zone); printpole(zone); break; }
 			case'h': { vlevo(zone); printpole(zone); break; }
+			case 'l': { vpravo(zone); printpole(zone); break; }
+			case 'k': { vverh(zone); printpole(zone); break; }
+			case 'x': { vniz(zone); printpole(zone); break; }
 			default: { cout << "Error" << endl; break; }
 			}
 		}
