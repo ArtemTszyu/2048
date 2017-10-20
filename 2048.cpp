@@ -87,7 +87,7 @@ void vniz(int zone[4][4]) {
 	}
 }
 
-void printpole(int zone[4][4]) {
+void print(int zone[4][4]) {
 	for (int y = 0; y < 4; y++){
 		for (int x = 0; x < 4; x++) {
 			if (zone[y][x] != 0) cout << zone[y][x];
@@ -98,7 +98,7 @@ void printpole(int zone[4][4]) {
 	cout << endl;
 }
 
-bool readpole(int matrix[4][4]) {
+bool read(int matrix[4][4]) {
 	bool result = true;
 	for (int y = 0; y<4; y++) {
 		string string;
