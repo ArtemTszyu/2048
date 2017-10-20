@@ -117,13 +117,13 @@ bool read(int matrix[4][4]) {
 int main() {
 	int zone[4][4];
 	char znak;
-	if (readpole(zone)) {
+	if (read(zone)) {
 		for (; cin >> znak;) {
 			switch (znak) {
-			case'h': { vlevo(zone); printpole(zone); break; }
-			case 'l': { vpravo(zone); printpole(zone); break; }
-			case 'k': { vverh(zone); printpole(zone); break; }
-			case 'x': { vniz(zone); printpole(zone); break; }
+			case'h': { vlevo(zone); print(zone); break; }
+			case 'l': { vpravo(zone); print(zone); break; }
+			case 'k': { vverh(zone); print(zone); break; }
+			case 'x': { vniz(zone); print(zone); break; }
 			default: { cout << "Error" << endl; break; }
 			}
 		}
